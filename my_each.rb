@@ -1,9 +1,9 @@
 def my_each( array) # put argument(s) here
-  # code here
+  if block given?
   i = 0
+
   while i < array.length
-    i
-    i+=1
+  yield array[i]
   end
 
   array
